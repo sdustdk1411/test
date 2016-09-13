@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int s=0,a[4][4],i,j;
+for(i=0;i<4;i++)
+for(j=0;j<4;j++){
+scanf("%d",&a[i][j]);
+if(i=j)
+s=s+a[i][j];
+if(i+j==3)
+s=s+a[i][j];
+}
+printf("%d\n",s);
+return 0;
+}
